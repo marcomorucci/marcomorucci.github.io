@@ -8,7 +8,7 @@ author_profile: true
 ## Publications
 _Shuffling the House? The Profile of Candidates and MPs in the 2015 British General Election._ (2016) Parliamentary Affairs 
 * with Chrisa Lamprinakou, Rosie Campbell, and Jennifer vanHeerde-Hudson. 
-* [Publisher's Version](10.1093/pa/gsw030)
+* [Publisher's Version](https://doi.org/10.1093/pa/gsw030)
 
 
 ## Working Papers
