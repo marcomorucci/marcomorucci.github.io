@@ -6,13 +6,11 @@ author_profile: true
 ---
 
 ## Publications
-* _Shuffling the House? The Profile of Candidates and MPs in the 2015 British General Election._ (2016) Parliamentary Affairs. 
+* _Shuffling the House? The Profile of Candidates and MPs in the 2015 British General Election._ (2016) Parliamentary Affairs. <a class="btn" href="https://doi.org/10.1093/pa/gsw030"> Published version</a>
     * With Chrisa Lamprinakou, Rosie Campbell, and Jennifer vanHeerde-Hudson. 
-    * [Publisher's Version](https://doi.org/10.1093/pa/gsw030)
-
 
 ## Working Papers
-* _Hypothesis Tests that Are Robust to Choice of Matching Method._ (2018).
+* _Hypothesis Tests that Are Robust to Choice of Matching Method._ (2018). <a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a>
    * With Md. Noor-E-Alam and  Cynthia Rudin.
 
 * _Matching Bounds: How Choice of Matching Algorithm Affects Treatment Effect Estimates._ (2018). 
