@@ -7,7 +7,7 @@ author_profile: true
 
 ## Publications
 * _Interpretable Almost-Matching-Exactly With Instrumental Variables._ (2019) Proceedings of the 35th Conference on Uncertainty in Artificial Intelligence (UAI 2019) <a class='btn' href='http://auai.org/uai2019/proceedings/papers/410.pdf'> Published Version</a> <a class='btn' href='https://arxiv.org/abs/1906.11658'> Arxiv </a>
-    * With M. Usaid Awan, Yameng Liu, Sudeepa Roy, Cynthia Ruding, and Alexander Volfovsky
+    * With M. Usaid Awan, Yameng Liu, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
 
 
 * _Shuffling the House? The Profile of Candidates and MPs in the 2015 British General Election._ (2016) Parliamentary Affairs. <a class="btn" href="https://doi.org/10.1093/pa/gsw030"> Published version</a>
