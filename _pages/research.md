@@ -6,7 +6,10 @@ author_profile: true
 ---
 
 ## Peer-reviewed Publications
-* **Almost-Matching-Exactly for Treatment Effect Estimation under Network Interference** (2020) Proceedings of the 23rd International Conference on Artificial Intelligence and Statistics (AISTATS) <a class='btn' href='https://arxiv.org/abs/2003.00964'> Arxiv </a>
+* **Adaptive Hyper-box Matching for Interpretable Individualized Treatment Effect Estimation** (2020) (Forthcoming) Proceedings of the 36th Conference on Uncertainty in Artificial Intelligence (UAI) <a class='btn' href='https://arxiv.org/abs/2003.01805'> Arxiv </a>
+  * With Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
+
+* **Almost-Matching-Exactly for Treatment Effect Estimation under Network Interference** (2020) (Forthcoming) Proceedings of the 23rd International Conference on Artificial Intelligence and Statistics (AISTATS) <a class='btn' href='https://arxiv.org/abs/2003.00964'> Arxiv </a>
   * With M. Usaid Awan, Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
 
 
@@ -19,9 +22,6 @@ author_profile: true
 
 
 ## Working Papers and Drafts
-* **Adaptive Hyper-box Matching for Interpretable Individualized Treatment Effect Estimation** <a class='btn' href='https://arxiv.org/abs/2003.01805'> Arxiv </a>
-  * With Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
-
 * **Credible Assumption Mixtures: Combining Point and Partial Identification Assumptions for Interpretable Bayesian Causal Inference** <a class='btn' href='/files/cam_paper.pdf'> Draft </a>
 
 
