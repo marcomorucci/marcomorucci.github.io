@@ -8,7 +8,7 @@ My research focuses on developing quantitative methods for empirically hard ques
 
 ## Peer-reviewed Publications
 * **Adaptive Hyper-box Matching for Interpretable Individualized Treatment Effect Estimation.** With Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky. Proceedings of the 36th Conference on Uncertainty in Artificial Intelligence (UAI) (2020) 
-<br><a class='btn' href='http://proceedings.mlr.press/v124/morucci20a/morucci20a.pdf'> Published version </a> <a class='btn' href='https://arxiv.org/abs/2003.01805'> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/Adaptive-Binning'> Replication </a> <a class='btn'href='https://github.com/almost-matching-exactly/AHB-R-package'> R Package </a>
+<br><a class='btn' href='http://proceedings.mlr.press/v124/morucci20a/morucci20a.pdf'> Published version </a> <a class='btn' href='https://arxiv.org/abs/2003.01805'> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/Adaptive-Binning'> Replication </a> <a class='btn' href='https://github.com/almost-matching-exactly/AHB-R-package'> R Package </a>
 
 * **Almost-Matching-Exactly for Treatment Effect Estimation under Network Interference.**  With M. Usaid Awan, Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky. Proceedings of the 23rd International Conference on Artificial Intelligence and Statistics (AISTATS (2020)) 
 <br><a class='btn' href='http://proceedings.mlr.press/v108/awan20a/awan20a.pdf'> Published version </a> <a class='btn' href='https://arxiv.org/abs/2003.00964'> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/AME-Networks'> Replication </a>
