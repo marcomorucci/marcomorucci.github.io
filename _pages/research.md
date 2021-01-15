@@ -23,6 +23,9 @@ My research focuses on developing quantitative methods for empirically hard ques
 <br><a class="btn" href="https://doi.org/10.1093/pa/gsw030"> Published version</a>
 
 ## Working Papers and Drafts
+* **`dame-flame`: A Python Library Providing Fast Interpretable Matching for Causal Inference.** With Neha R. Gupta, Vittorio Orlandi, Chia-Rui Chang, Tianyu Wang, ,Pritam Dey, Thomas J. Howell, Xian Sun, Angikar Ghosal, Sudeepa Roy, Cynthia Rudin and Alexander Volfovsky. (Under review)
+<br><a class="btn" href="https://arxiv.org/abs/2101.01867"> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/DAME-FLAME-Python-Package'> Python Package </a> 
+
 * **A Fast, Cost-Efficient Image Annotation Algorithm withan Application to Analyzing the Visual Components of Protests.** 
 <br><a class='btn' href='/files/SSL_protests.pdf'> Draft </a>
 
