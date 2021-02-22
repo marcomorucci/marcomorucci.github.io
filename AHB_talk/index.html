@@ -1,0 +1,892 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/duke.css" id="theme">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Roboto:400,400i,700" 
+		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700|Open+Sans:400,400i,700" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<style>
+			.presentationTitle{
+				font-family: 'EB Garamond';
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#012169", class="presentationTitle">
+					<p style="font-size: 70pt; font-weight: 700;">Adaptive Hyper-Box Matching</p>
+					<p style="font-size: 40pt;">For Interpretable Treatment Effect Estimation </p>
+					<hr>
+					<table style="width: 100%; font-size: 40pt;"><tr>
+					<td style="text-align: left;">Marco Morucci <br> </td>
+					<td style="text-align: right; font-size: 40pt;">Duke University</td>
+					</tr>
+				</table>
+				<p align=left>marco.morucci@duke.edu</p>
+				</section>
+				<!-- <section  data-auto-animate>
+					<h2> Treatment Effects and High-Stakes Decisions</h2>
+				</section>
+				<section data-auto-animate>	
+					<h2> Treatment Effects and High-Stakes Decisions</h2>
+					<p> <strong>Causal Estimates</strong> are increasingly used to justify decisions in all sectors...</p>			
+				</section>
+				<section data-auto-animate>	
+					<h2> Treatment Effects and High-Stakes Decisions</h2>
+					<p> <strong>Causal Estimates</strong> are increasingly used to justify decisions in all sectors...</p>
+					<table><tr>
+						<td>Politics
+							<br>
+							<img style='width: 50%;' src="images/politics_clipart.png"></td>
+					</tr></table>
+				</section>
+				<section data-auto-animate>	
+					<h2> Treatment Effects and High-Stakes Decisions</h2>
+					<p> <strong>Causal Estimates</strong> are increasingly used to justify decisions in all sectors...</p>
+					<table><tr>
+						<td>Politics<br>
+							<img style='width: 50%;' src="images/politics_clipart.png"></td>
+						<td>Business<br>					
+							<img style='width: 50%;' src="images/business_clipart.png"></td>
+					</tr></table>
+				</section>
+				<section data-auto-animate>	
+					<h2> Treatment Effects and High-Stakes Decisions</h2>
+					<p> <strong>Causal Estimates</strong> are increasingly used to justify decisions in all sectors...</p>
+					<table><tr>
+						<td>Politics<br>
+							<img style='width: 50%;' src="images/politics_clipart.png"></td>
+						<td>Business<br>						
+							<img style='width: 50%;' src="images/business_clipart.png"></td></td>
+						<td>Healthcare<br>
+							<img style='width: 50%;' src="images/healthcare_clipart.png"></td>
+					</tr></table>
+				</section>
+				<section>	
+					<h2> But is a causal estimate alone enough to justify downstream decisions?</h2>
+				</section>
+				<section data-auto-animate>	
+					<h3> A simple example: Should I take the COVID-19 Vaccine?</h3>
+					<p class="fragment" >Let's check out some TE estimates...</p>
+				</section>
+				<section data-auto-animate>	
+					<h3> A simple example: Should I take the COVID-19 Vaccine?</h3>
+					<p>Let's check out some TE estimates...</p>
+					<img style="border: 1px solid black" src="images/covid_trials.png">
+					<p class="fragment"><strong>So, Yes</strong></p>
+				</section>
+				<section data-auto-animate>
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img style="border: 1px solid black" class="fragment fade-up" src="images/covid1.png">
+				</section>
+				<section data-auto-animate="">
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img  style="border: 1px solid black"src="images/covid2.png">
+				</section>
+				<section data-auto-animate="">
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img  style="border: 1px solid black"src="images/covid3.png">
+				</section>
+				<section data-auto-animate="">
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img  style="border: 1px solid black"src="images/covid4.png">
+				</section>
+				<section data-auto-animate="">
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img  style="border: 1px solid black"src="images/covid5.png">
+				</section>
+				<section data-auto-animate="">
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img  style="border: 1px solid black"src="images/covid6.png">
+				</section>
+				<section data-auto-animate="">
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img style="border: 1px solid black" src="images/covid7.png">
+				</section>
+				<section data-auto-animate="">
+					<h3>But are most decision-makers satisfied with just knowing the TE?</h3>
+					<h4>well...</h4>
+					<img  style="border: 1px solid black"src="images/covid8.png">
+				</section>
+				<section>
+					<h2> Interpretability is important.</h2>
+					<p class="fragment"> When it comes to high-stakes decisions, "because the algorithm said so" isn't trustworthy for a lot of decision makers anymore.</p>
+					<h3 class="fragment">In this talk, I will introduce methods to estimate treatment effects interpretably.</h3>
+				</section> -->
+				<section data-auto-animate>	
+					<h2> Treatment Effects and High-Stakes Decisions</h2>
+					<p> <strong>Causal Estimates</strong> are increasingly used to justify decisions in all sectors...</p>
+					<table><tr>
+						<td>Politics<br>
+							<img style='width: 50%;' src="images/politics_clipart.png"></td>
+						<td>Business<br>						
+							<img style='width: 50%;' src="images/business_clipart.png"></td></td>
+						<td>Healthcare<br>
+							<img style='width: 50%;' src="images/healthcare_clipart.png"></td>
+					</tr></table>
+					<p> <strong>Goal:</strong> We want to provide decision-makers with <strong>trustworthy</strong> methods that produce <strong>justifiable</strong> estimates. </p> 
+				</section>
+				<section>
+					<h3> Treatment effect estimation</h3>
+					<h4>Setting: Observational Causal Inference</h4>
+					<ul>
+						<li >We have a set of $N$ units</li>
+						<li >They have potential outcomes $Y_i(1), Y_i(0)$</li>
+						<li >They are associated with a set of contextual covariates, $\mathbf{X}_i$</li>
+						<li >They are assigned either treatment $T_i=1$ or $T_i=0$</li>
+						<li >We observe $Y_i = T_iY(1) + (1-T_i)Y_i(0)$ </li>
+						<li >We would like to know: $$CATE(\mathbf{x}_i) = \mathbb{E}[Y_i(1) - Y_i(0)|\mathbf{X_i = \mathbf{x}_i}]$$</li>
+						<li>Assume SUTVA, Overlap, ignorability</li>
+					</ul>
+				<p><strong>All methods presented here can also be applied to experimental data</strong>, for example, to analyze treatment effect heterogeneity.</p>
+				</section>
+				<section data-visibility="hidden">
+					<h3> Treatment effect estimation</h3>
+					<p class="fragment">How do we estimate a quantity that's half unobserved? </p>
+					<p class="fragment">We can under two main assumptions</p>
+					<ul>
+						<li class="fragment"><strong>Conditional Ignorability</strong> $(Y_i(1), Y_i(0))$ is independent of $T_i$ conditional on $\mathbf{X}_i$</li>
+						<li class="fragment"><strong>SUTVA:</strong> Unit $i$ is exclusively affected by its own treatment</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+					<h2> Matching in a nutshell</h2>
+					<table><tr >
+						<td style="vertical-align: middle;"><ul>
+							<li><strong>Q:</strong>What would happen if A didn't receive the treatment?</li>
+							<li><strong>Idea:</strong>Compare A to B, its identical twin who didn't receive the treatment</li>
+							<li><strong>But...</strong>Not everyone has an identical twin! Sometimes similar is good enough.</li>
+						</ul></td>
+						<td><img style="width:100%" src="images/matching.png"></td>
+					</tr>
+					</table>
+					<h4>Matching: The problem of finding everyone's most similar untreated unit in the dataset</h4>
+				</section>
+					<section>
+						<h3> Matching in a nutshell</h3>
+						<p> Matching allows us to take advantage of CI and SUTVA to estimate the CATE in an <strong>interpretable</strong> way.</p>
+						<ul style="width: 100%">
+							<li >For each unit, $i$ find several other units that are <strong>similar</strong> in the covariate values.</li>
+							<li >Form a <strong>Matched Group</strong> (MG) with all the units matched to $i$ </li>
+							<li >Estimate the CATE for $i$ with $$\widehat{CATE}_i = \frac{1}{N^t_{MG}}\sum_{i \in MG}Y_iT_i - \frac{1}{N^c_{MG}}\sum_{i \in MG}Y_i(1-T_i)$$</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h3> Why matching?</h3>
+					<p >We choose matching to estimate CATEs because matching is <strong>interpretable</strong> and interpretability is important</p>
+					<ul style="width: 100%">
+						<li >Interpretability permits greater accountability of decision-makers in high-stake settings</li>
+						<li >Interpretability allows researchers to debug their models, datasets and results </li>
+						<li >Interpretability makes results from Machine Learning tools more trustworthy to human observers</li>
+					</ul>
+					<h3 class = "fragment" data-fragment-index="2"> Matching is interpretable because estimates are case-based</h3>
+					<p class = "fragment" data-fragment-index="2">"We came up with that estimates because we looked at these similar cases."</p>
+				</section>
+				<!-- <section>
+					<h3> But is case choice interpretable in existing methods?</h3>
+					<p >Case-based estimation is good, but can we do better?</p>
+					<ul>
+						<li align=center >Most popular matching methods match on an uniterpretable single-number summary (propensity, prognostic score) of the covariates<br>
+						<img style="width:70%"  src="images/NN_pscore.png">
+						</li>
+						<li >Case choice is unexplainable!</li>
+						<li >We want to be able to explain why two units were matched together</li>
+					</ul>
+					</table>
+				</section>
+				<section>
+					<h3> But do existing matching methods produce accurate CATE estimates?</h3>
+					<p >Matching estimates can be inaccurate</p>
+					<ul>
+						<li >Complex and flexible ML methods are likely to make better predictions than simple matches</li>
+						<li >Can we bridge the gap between methods?</li>
+					</ul>
+					</table>
+				</section>
+				<section>
+					<p >The rest of this talk will cover</p>
+					<h2 > Almost Matching Exactly </h2>
+					<p >A family of matching methods that:</p>
+					<ul>
+						<li >Make explainable matched groups</li>
+						<li>Rely on flexible ML to make accurate predictions</li>
+						<li >Are fast in most applied settings</li>
+						<li >Can be scaled up to massive datasets in some cases</li>
+					</ul>
+					<h3 class="fragment" data-fragment-index="2">Two Algorithms</h3>
+					<ul>
+						<li class="fragment"  data-fragment-index="2"><strong>FLAME</strong> for scalable matching on discrete data</li>
+						<li class="fragment"  data-fragment-index="2"><strong>AHB</strong> for accurate matching on continuous data</li>
+					</ul>
+				</section>
+				<section>	
+					<h3> Almost Matching Exactly <br> With Discrete Covariates</h3>
+					<p >Given a unit, choose a set of units with the opposite treatments to match it to.</p>
+					<p >Ideally, we would match it to units with exactly the same covariates</p>
+					<p ><strong>Problem: </strong>There are no exact matches on all covariates!</p>
+					<p ><strong>Solution: </strong>Make an Almost-Exact Match on the most important covariates.</p>
+				</section>
+				<section >	
+					<h3> Almost Matching Exactly <br> With Discrete Covariates</h3>
+					<p ><strong>Step 1 </strong>Split your data into a training set and a matching set, the latter containing the unit you wish to match.</p>
+					<img  style='width: 50%;' src="images/AME_step1.png"></td>
+				</section>
+				<section data-transition="none-out">	
+					<h3> Almost Matching Exactly <br> With Discrete Covariates</h3>
+					<p ><strong>Step 2 </strong>Using Machine Learning on the <strong> training</strong> set, figure out which covariates predict the outcome best</p>
+					<img  style='width: 90%;' src="images/AME_step2.png"></td>
+				</section>
+				<section data-transition="none-in">	
+					<h3> Almost Matching Exactly <br> With Discrete Covariates</h3>
+					<p><strong>Step 2 </strong>Using Machine Learning on the <strong> training</strong> set, figure out which covariates predict the outcome best</p>
+					<img style='width: 90%;' src="images/AME_step2b.png"></td>
+				</section>
+				<section>	
+					<h3> Almost Matching Exactly <br> With Discrete Covariates</h3>
+					<p ><strong>Step 3 </strong>Find the set of covariates that maximizes cumulative weight, and permits an exact match with at least one other unit.</p>
+					<table><tr>
+						<td align="center"><img style='width: 50%;' src="images/AME_step3.png"></td></td>
+						<td  align="left" style="vertical-align: middle;">
+							<table style='font-size: 0.5em'>
+								   <tr><td></td><td>Age</td><td>Height</td><td>Degree</td></tr>
+								   <tr><td>Nothing</td><td>15</td><td>10</td><td>5</td></tr>
+								   <tr><td>Age</td><td>--</td>
+									<td style="font-weight: bold; border: 2px solid red;">25</td>
+									<td>20</td></tr>
+								   <tr><td>Height</td><td>25</td><td>--</td><td>15</td></tr>
+								   <tr><td>Degree</td><td>20</td><td>15</td><td>--</td></tr>
+						</table></td>
+					</tr></table>
+					<p >We should match on Age and Height!</p>
+				</section>
+				<section>	
+					<h3> Almost Matching Exactly <br> With Discrete Covariates</h3>
+					<p ><strong>Step 4 </strong>Match that unit exactly on that set of covariates with as many other units as possible.</p>
+						<img  style='width: 40%;' src="images/AME_step3b.png">
+					<p ><strong>That's it! </strong></p>
+				</section>
+				<section>	
+					<h3> Almost Matching Exactly <br> Formally</h3>
+					<p >\[\begin{align}
+						&\boldsymbol{\theta}_i^* \in \text{arg}\max\limits_{\boldsymbol{\theta} \in \{0,1\}^p} \mathbf{w}^T\boldsymbol{\theta}\\
+						&\text{s.t.:}\, \exists j:\, T_j\neq T_i,\text{ and, } \mathbf{x}_j \circ \boldsymbol{\theta} = \mathbf{x}_i \circ \boldsymbol{\theta}. 
+						\end{align}\]</p>
+					<ul>
+						<li>$\boldsymbol{\theta}_i$ = covariate selector</li>
+						<li>$\mathbf{w}$ = covariate weights, training set variable accuracy in our case</li>
+					</ul>
+					<p > "Among all the subsets of covariates for which there exists at least one exact match with opposite treatment, choose the one that maximizes total weight."</p>
+				</section>
+				<section>
+					<h3> AME targets estimation error</h3>
+					<p > The CATE estimation error for AME can be upper-bounded as:</p>
+					<p >\[|\widehat{CATE}(\mathbf{x}_i) - CATE(\mathbf{x}_i)| \leq 2M\mathbf{w}^T(1-\boldsymbol{\theta}_i)\]</p>
+					<ul>
+						<li >$\mathbf{w}^T(1-\boldsymbol{\theta}_i)$ is the opposite of $\mathbf{w}^T\boldsymbol{\theta}_i$</li>
+						<li >AME maximizes $\mathbf{w}^T\boldsymbol{\theta}_i$</li>
+					</ul>
+					<p ><strong> AME minimizes this upper bound on estimation error.</strong> </p>
+				</section>
+				<section>	
+					<h3> Fast Large Scale Almost Matching Exactly <br> (FLAME)</h3>
+					<p style="font-style: italic; font-size: 0.7em;">[Wang, Moruccy, Awan, Liu, Roy, Rudin, Volfovsky (JMLR 2021)]</p>
+					<ul>
+					<li >Solves the AME problem <strong>very</strong> quickly on massive amounts of data</li>
+					<li >Can be implemented <strong>natively</strong> on SQL databases</li>
+					<li><strong>No free lunch:</strong> FLAME's solution to AME is approximate</li>
+					<li >...but not too far from the optimum.</li>
+				</ul>
+				</section>
+				<section>
+					<section>
+					<h3> The FLAME Algorithm</h3>
+					<ol>
+						<li >Estimate covariate weights on training set</li>
+						<li  >Make as many exact matches as possible, remove matched units from matching set</li>
+						<li  >Remove <strong> the lowest-weight covariate</strong></li>
+						<li >Repeat until either:
+							<ul>
+								<li  >No more unmatched units are left</li>
+								<li >Combined predictive accuracy of remaining covariates dips below threshold (recommended)</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+					<section>
+						<h3> A SQL Implementation</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3> FLAME's performance: simulated data</h3>
+						<ul>
+						<li >20K Units, half treatment, half control</li>
+						<li >30 covariates, <strong>only 10 matter</strong></li>
+						<li >Irrelevant covariates affect treatment assignment but not outcome</li>
+						<li >Nonlinear outcome model with interaction term</li>
+						</ul>
+					</section>
+					<section>
+						<h3> FLAME's performance: simulated data</h3>
+						<ul>
+						<li>$N^t = N^c = 10,000$, $P = 30$</li>
+						<li>\[y = \sum_{i=1}^{10}\alpha_ix_i + T\sum_{i=1}^{10}\beta_ix_i + T\sum_{i=1}^5\sum_{j = i}^5 x_ix_j\]</li>
+						for $i = 1, \dots, 10 $ (relevant covariates)
+						<li>$x_i \sim Ber(0.5)$</li>
+						<li>$\beta_i \sim N(1.5, 0.15)$</li>
+						<li>$s \sim Unif(-1, 1), \alpha_i \sim N(10s, 1)$</li>
+						<br>
+						for $i = 11, \dots, 30$ (irrelevant covariates)
+						<li>$x_i \sim TBer(0.9) + (1-T)Ber(0.1)$</li>
+						<li>$\alpha_i = 0$, $\beta_i = 0$</li>
+						</ul>
+					</section>
+				</section>
+				<section data-auto-animate>
+					<h3> Simulation Results <br> FLAME vs. other matching methods</h3>
+					<table align='center'>
+						<tr><td align='center'>FLAME</td>
+							<td align='center'>True Pscore Match</td></tr>
+						<tr><td><img  src="images/flame-early.png"></td>
+							<td><img style="visibility: hidden;" src="images/hdps_exp_oracle1.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> Simulation Results <br> FLAME vs. other matching methods</h3>
+					<table align='center'>
+						<tr><td align='center'>FLAME</td>
+							<td align='center'>True Pscore Match</td></tr>
+						<tr><td><img  src="images/flame-early.png"></td>
+							<td><img  src="images/hdps_exp_oracle1.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> Simulation Results <br> FLAME vs. other matching methods</h3>
+					<table align='center'>
+						<tr><td align='center'>FLAME</td>
+							<td align='center'>Genetic Match</td></tr>
+						<tr><td><img  src="images/flame-early.png"></td>
+							<td><img  src="images/comparison_GenMatch.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> Simulation Results <br> FLAME vs. other matching methods</h3>
+					<table align='center'>
+						<tr><td align='center'>FLAME</td>
+							<td align='center'>Mahalanobis Match</td></tr>
+						<tr><td><img  src="images/flame-early.png"></td>
+							<td><img  src="images/comparisons_Mahalanobis.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> Simulation Results <br> FLAME vs. uninterpretable ML</h3>
+					<table align='center'>
+						<tr><td align='center'>FLAME</td>
+							<td align='center'>Causal Forests</td></tr>
+						<tr><td><img  src="images/flame-early.png"></td>
+							<td><img  src="images/comparison_causalforest.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> Simulation Results <br> FLAME vs. uninterpretable ML</h3>
+					<table align='center'>
+						<tr><td align='center'>FLAME</td>
+							<td align='center'>CTMLE</td></tr>
+						<tr><td><img  src="images/flame-early.png"></td>
+							<td><img  src="images/ctmle_exp.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> Simulation Results <br> FLAME vs. uninterpretable ML</h3>
+					<table align='center'>
+						<tr><td align='center'>FLAME</td>
+							<td align='center'>BART</td></tr>
+						<tr><td><img  src="images/flame-early.png"></td>
+							<td><img  src="images/bart.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section >
+					<h3> How does FLAME scale?</h3>
+					<table>
+						<tr><th>Method</th> <th>Time for N=20K (sec)</th> <th>Time for N=1.2M (hr)</th></tr>
+						<tr><td>FLAME</td> <td>22.30</td> <td style="border: 4px solid red; font-weight: bold;">1.33</td></tr>
+						<tr><td>Causal Forest</td> <td>59.68</td><td>Crashed</td></tr>
+						<tr><td>PScore Match</td> <td>13.88</td><td>> 10</td></tr>
+						<tr><td>Genmatch</td> <td>> 150</td><td>> 10</td></tr>
+						<tr><td>Cardinality Match</td> <td>> 150</td><td>> 10</td></tr>
+					</table>
+				</section>
+
+				<section data-auto-animate>
+					<h3> An AME Application: Smoking and Pregnancy </h3>
+					<table>
+						<tr>
+							<td style="width:50%; font-size: 0.8em; vertical-align: middle;"><ul>
+								<li> Data: All US births in 2010</li>
+								<li>$N \approx 2.1M$ units, $\approx 75K$ treated</li>
+								<li><strong>Treatment:</strong> Mother smokes at least 10 cigarettes a day</li>
+								<li><strong>Control:</strong> Mother does not smoke</li>
+								<li><strong>Outcome:</strong> Birth weight</li>
+							</ul></td>
+							<td class="fragment" style="vertical-align: middle;">
+								<img style="width:80%" src="images/nat_covariates.png">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> An AME Application: Smoking and Pregnancy </h3>
+					<table>
+						<tr>
+							<td style="width:50%; font-size: 0.8em; vertical-align: middle;"><ul>
+								<li> Data: All US births in 2010</li>
+								<li>$N \approx 2.1M$ units, $\approx 75K$ treated</li>
+								<li><strong>Treatment:</strong> Mother smokes at least 10 cigarettes a day</li>
+								<li><strong>Control:</strong> Mother does not smoke</li>
+								<li><strong>Outcome:</strong> Birth weight</li>
+							</ul></td>
+							<td style="vertical-align: middle;">
+								<img src="images/nat_cates.png">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> An AME Application: Smoking and Pregnancy </h3>
+					<table>
+						<tr>
+							<td style="width:50%; font-size: 0.8em; vertical-align: middle;"><ul>
+								<li> Data: All US births in 2010</li>
+								<li>$N \approx 2.1M$ units, $\approx 75K$ treated</li>
+								<li><strong>Treatment:</strong> Mother smokes at least 10 cigarettes a day</li>
+								<li><strong>Control:</strong> Mother does not smoke</li>
+								<li><strong>Outcome:</strong> Birth weight</li>
+							</ul></td>
+							<td style="vertical-align: middle;">
+								<img src="images/nat_cateb.png">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>AME widh discrete data and FLAME: summary</h3>
+					<ul>
+						<li >
+							When exact matching on all covariates isn't possible, matching exactly on a subset of covariates is a good solution
+						</li>
+						<li>
+							Covariates subsets to match on are chosen with flexible ML tools on a separate training set
+						</li>
+						<li >
+							Resulting algorithm is accurate, fast and interpretable
+						</li>
+					</ul>
+				</section> -->
+				<section>
+					<h3> Matching with Continuous Covariates</h3>
+					<p > <strong>Problem:</strong> do we find know who to match to whom when covariates are continuous?</p>
+					<p > <strong>Solution:</strong> Coarsening (binning) variables and then forming matched groups based on bins seems natural</p>
+					<p ><strong>More problems:</strong> ...but how do we know how much to coarsen each variable?</p>
+					</ul>
+				</section>
+				<section>
+					<h3> Carefully Coarsening Covariates</h3>
+					<p >Consider the problem of having to bin a covariate, $x$</p>
+					<table>
+						<tr ><td  data-fragment-index="2" align='center'>Fixed boxes</td> <td class="fragment" data-fragment-index="3" align='center'>Adaptive boxes</td></tr>
+						<tr>
+							<td  style="vertical-align: middle;"><img style="width: 100%" src="images/ahb_issues_l.png"></td>
+							<td class="fragment" data-fragment-index="3" style="vertical-align: middle;"><img style="width: 100%" src="images/ahb_issues_r.png"></td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<h3> Takeaways </h3>
+					<ul><li >Relationship between $x$ and $y$ should be considered when binning
+					</li>
+						<li >Even so, optimal-but-fixed width bins are not enough, because...</li>
+						<li >Different parts of the covariate space should be binned according to variance of $y$ </li></ul>
+				</section>
+				<section data-auto-animate>
+					<h3> Takeaways </h3>
+					<ul><li>Relationship between $x$ and $y$ should be considered when binning</li>
+						<li>Even so, optimal-but-fixed width bins are not enough, because...</li>
+						<li>Different parts of the covariate space should be binned according to variance of $y$ </li></ul>
+					<h3> Adaptive HyperBoxes </h3>
+						<p style="font-style: italic; font-size: 0.7em;">[Morucci, Orlandi, Roy, Rudin, Volfovsky (UAI 2020)]</p>
+						<p>An algorithm to <strong>adaptively</strong> learn optimal coarsenings of the data that satisfy these criteria. </p>
+				</section>
+				<section>
+					<h3> The AHB Algorithm </h3>
+					<p ><strong>Step 1:</strong> On a separate training set, fit a flexible ML model to predict both potential outcomes for each unit in the matching set. </p>
+					<img  src="images/ahb_step1.png">
+				</section>
+				<section data-auto-animate>
+					<h3> The AHB Algorithm </h3>
+					<p><strong>Step 2:</strong> Construct a p-dimensional box around each unit, such that, in the box: </p>
+					<table><tr>
+						<td style="vertical-align: middle;"><ul style="font-size: 0.8em;">
+							<li style="color: white;">There are many units</li>
+							<li style="color: white;">Predicted outcomes <br>are similar</li>
+							<li style="color: white;">Predictions from outcome <br>averages are similar to ML predictions</li>
+						</ul></td>
+						<td><img src="images/ahb_step2a.png"></td>
+					</tr></table>
+				</section>
+				<section data-auto-animate>
+					<h3> The AHB Algorithm </h3>
+					<p><strong>Step 2:</strong> Construct a p-dimensional box around each unit, such that, in the box: </p>
+					<table><tr>
+						<td style="vertical-align: middle;"><ul style="font-size: 0.8em;">
+							<li style="color: black;">There are many units</li>
+							<li style="color: white;">Predicted outcomes <br>are similar</li>
+							<li style="color: white;">Predictions from outcome <br>averages are similar to ML predictions</li>
+						</ul></td>
+						<td><img src="images/ahb_step2.png"></td>
+					</tr></table>
+				</section>
+				<section data-auto-animate>
+					<h3> The AHB Algorithm </h3>
+					<p><strong>Step 2:</strong> Construct a p-dimensional box around each unit, such that, in the box: </p>
+					<table><tr>
+						<td style="vertical-align: middle;"><ul style="font-size: 0.8em;">
+							<li style="color: black;">There are many units</li>
+							<li style="color: black;">Predicted outcomes <br>are similar</li>
+							<li style="color: white;">Predictions from outcome <br>averages are similar to ML predictions</li>
+						</ul></td>
+						<td><img src="images/ahb_step2b.png"></td>
+					</tr></table>
+				</section>
+				<section data-auto-animate>
+					<h3> The AHB Algorithm </h3>
+					<p><strong>Step 2:</strong> Construct a p-dimensional box around each unit, such that, in the box: </p>
+					<table><tr>
+						<td style="vertical-align: middle;"><ul style="font-size: 0.8em;">
+							<li style="color: black;">There are many units</li>
+							<li style="color: black;">Predicted outcomes <br>are similar</li>
+							<li style="color: black;">Predictions from outcome <br>averages are similar to ML predictions</li>
+						</ul></td>
+						<td><img src="images/ahb_step2c.png"></td>
+					</tr></table>
+				</section>
+				<section>
+					<h3> The AHB Algorithm </h3>
+					<p><strong>Step 3:</strong> Match together units that are in the same box </p>
+					<img  style="width: 50%" src="images/ahb_step3.png">
+					<p ><strong>That's it!</strong></p>
+				</section>
+				<section>
+					<h3> AHB Formally </h3>
+					<p >\[\min_{\mathbf{H}} Err(\mathbf{H}, \mathbf{y}) + Var(\mathbf{H}, \mathbf{y}) - n(\mathbf{H})\]</p>
+					<p >where:</p>
+					<ul>
+						<li >$\mathbf{H}$ is the hyper-box we want to find</li>
+						<li >$Err(\mathbf{H}, \mathbf{y})$ is the outcome prediction error for all points in $\mathbf{H}$</li>
+						<li >$Var(\mathbf{H}, \mathbf{y})$ is the outcome variance between points in $\mathbf{H}$</li>
+						<li >$n(\mathbf{H})$ is the number of points in $\mathbf{H}$</li>
+					</ul>
+				</section>
+				<section>
+					<h3> AHB Formally </h3>
+					<p> In practice, we solve, for every unit, $i$:</p>
+					<p>\[\min_{\mathbf{H}_i} \sum_{j=1}^n \sum_{t=0}^1 w_{ij}|\hat{f}(\mathbf{x}_i, t) - \hat{f}(\mathbf{x}_j, t)| - \gamma\sum_{j=1}^n w_{ij}\]</p>
+					<ul>
+						<li>$w_ij$ denotes whether unit $j$ is contained in box $i$</li>
+						<li>$\hat{f}(\mathbf{x}, t)$ is the predicted outcome</li>
+					</ul>
+					<p >This function controls all terms previously introduced. </p>
+				</section>
+				<section data-auto-animate>
+					<h3>Two solution methods for AHB</h3>
+					<h4>An exact solution via a MILP formulation</h4>
+					<ul>
+						<li>Can be solved by any popular MIP solver (CPLEX, Gurobi, GLPK...)</li>
+						<li>Simple preprocessing steps make solution relatively fast</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Two solution methods for AHB</h3>
+					<h4>A fast approximate algorithm</h4>
+					<ol>
+						<li>Determine which unit is closest in absolute distance along each covariate</li>
+						<li>Expand the box in the direction with the lowest predicted outcome variance</li>
+						<li>Repeat until a desired threshold of matches or loss is met</li>
+					</ol>
+				</section>
+				<section>
+					<h3> AHB Performance </h3>
+					<p><strong>Test case: Lalonde data</strong></p>
+					<ul>
+						<li>Effect of training program on income</li>
+						<li>Several samples, two observational (PSID, CPS), one experimental (NSW)</li>
+						<li>Idea: match experimental treated units (N=185) to observational controls (N>2000) to recover experimental estimates.</li>
+						<li>Matching covariates: Age, Education, Prior income, Race, Marital status</li>
+					</ul>
+				</section>
+				<section>
+					<h3> AHB Performance </h3>
+					<p><strong>Test case: Lalonde data</strong></p>
+					<p class="fragment" data-fragment-index="1"> Who gets closest to experimental?</p>
+					<table>
+						<tr class="fragment" data-fragment-index="2"><th>Method</th> <th>CPS sample</th> <th>PSID sample</th></tr>
+						<tr  class="fragment" data-fragment-index="3" style="font-weight: bold;"><td>Experimental</td> <td>1794$</td><td>1794$</td></tr>
+						<tr  class="fragment" data-fragment-index="5" style="border: 4px solid red"><td>AHB</td><td>1720$</td><td>1762$</td></tr>
+						<tr  class="fragment" data-fragment-index="4"><td>Naive</td><td>-7729</td><td>-14797</td></tr>
+						<tr  class="fragment" data-fragment-index="4"><td>Full Matching</td><td>708</td><td>816</td></tr>
+						<tr  class="fragment" data-fragment-index="4"><td>Prognostic</td><td>1319</td><td>2224</td></tr>
+						<tr  class="fragment" data-fragment-index="4"><td>CEM</td><td>3744</td><td>-2293</td></tr>
+						<tr  class="fragment" data-fragment-index="4"><td>Mahalanobis</td><td>1181</td><td>-804</td></tr>
+					</table>
+				</section>
+				<section>
+					<h3> AHB Performance </h3>
+					<table>
+						<tr>
+							<td style="width: 50%; vertical-align: middle;">Recall: ideally, adaptive bins would look like this:</td>
+							<td align=left style="vertical-align: middle;"><img style="width:100%" src="images/ahb_issues_r.png"></td>
+						</tr>
+						<tr>
+							<td class="fragment" data-fragment-index="2" style="width: 50%; vertical-align: middle;">AHB outputs these bins on the Lalonde data:</td>
+							<td class="fragment" data-fragment-index="2" align=left style="vertical-align: middle;">
+								<img style="width:100%" src="images/lalonde_income_bins.png"></td>
+						</tr>
+					</table>
+					<p class="fragment" data-fragment-index="2">Pretty close to the theoretical ideal!</p>
+				</section>
+				
+				<section>
+					<h3> Are our Matches interpretable? </h3>
+					<p> AME/AHB matches vs. Pscore matches </p>
+					<table style="font-size: .9em;">
+						<tr style= "font-weight: bold;" class="fragment" data-fragment-index="1">
+						   <td>Age</td>
+						   <td>Education</td>
+						   <td>Black</td>
+						   <td>Married</td>
+						   <td>HS Degree</td>
+						   <td>Pre income</td>
+						   <td>Post Income (outcome)</td>
+						</tr>
+						<tr  style="border: 4px solid black; font-weight: bold; background-color: lightgray;" 
+						class="fragment" data-fragment-index="2">
+							<td colspan="7" align="center">Treated unit we want to match</td>
+						</tr>
+						<tr class="fragment" style="background-color: white;" data-fragment-index="2">
+							<td>22</td>
+							<td>9</td>
+							<td>no</td>
+							<td>no</td>
+							<td>no</td>
+							<td>0</td>
+							<td>3595.89</td>
+						 </tr>
+						<tr  style="border: 4px solid black; font-weight: bold; background-color: lightgray;" class="fragment" data-fragment-index="3">
+						   <td align="center" colspan="7">Matched controls: prognostic score</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="3">
+						   <td style="background-color:rgb(252, 106, 53);">44</td>
+						   <td>9</td>
+						   <td style="background-color:rgb(252, 106, 53);">yes</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>0</td>
+						   <td>9722</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="3">
+						   <td>22</td>
+						   <td style="background-color:rgb(252, 106, 53);">12</td>
+						   <td style="background-color:rgb(252, 106, 53);">yes</td>
+						   <td>no</td>
+						   <td style="background-color:rgb(252, 106, 53);">yes</td>
+						   <td style="background-color:rgb(252, 106, 53);">532</td>
+						   <td>1333.44</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="3">
+						   <td>18</td>
+						   <td>10</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>0</td>
+						   <td>1859.16</td>
+						</tr>
+						<tr style="border: 4px solid black; font-weight: bold; background-color: lightgray;" class="fragment" data-fragment-index="5">
+						   <td colspan="7" align="center">Matched controls: AHB</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="5">
+						   <td>22</td>
+						   <td>9</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>0</td>
+						   <td>1245</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="5">
+						   <td>20</td>
+						   <td>8</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>0</td>
+						   <td>5862.22</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="5">
+						   <td>24</td>
+						   <td>10</td>
+						   <td style="background-color:rgb(252, 106, 53);">yes</td>
+						   <td>no</td>
+						   <td>no</td>
+						   <td>0</td>
+						   <td>4123.85</td>
+						</tr>
+					 </table>
+				</section>
+				<section>
+					<h3> Are our Matches interpretable? </h3>
+					<p> AHB Interactive output </p>
+					<iframe style="width:100%; height:800px; vertical-align: top;" src="images/ahb_viz.html"></iframe>
+				</section>
+				<!-- <section>
+					<h3> Extensions of the AME framework</h3>
+					<p>The AME framework has already been extended to...</p>
+					<table>
+						<tr >
+							<td  style="width: 50%; vertical-align: middle;">Instrumental Variables
+								 <p style="font-style: italic; font-size: 0.7em;"> [Awan, Liu, Morucci, Roy, Rudin, Volfovsky (UAI 2019)]</p></td></td>
+							<td   align=left style="vertical-align: middle;"><img style="width:100%" src="images/instrument4.png"></td>
+						</tr>
+						<tr >
+							<td    style="width: 50%; vertical-align: middle;">Network Interference 
+							<p style="font-style: italic; font-size: 0.7em;"> [Morucci, Orlandi, Roy, Rudin, Volfovsky (AISTATS 2020)]</p></td>
+							<td  align=left style="vertical-align: middle;">
+								<img style="width:100%" src="images/inexact_matchingv2.png"></td>
+						</tr>
+					</table>
+				</section> -->
+				<!-- <section data-auto-animate="">
+					<h3> Extensions of the AME framework</h3>
+					<p>...but there are <strong>many</strong> other natural avenues:</p>
+					<ul>
+						<li>Matching with non-standard data such as text or images</li>
+						<li>Matching with spatio/temporal data</li>
+						<li>AME for difference-in-differences estimation</li>
+						<li>...and more!</li>
+					</ul>
+					<p>Currently we're working on:</p>
+					<ul align="center">
+						<li>Constructing estimators for matched groups that are asymptotically well-behaved</li>
+						<li>Using matching to facilitate sensitivity analysis in massive observational datasets</li>
+				    </ul>
+				</section>
+				<section data-auto-animate="">
+					<h3> Extensions of the AME framework</h3>
+					<p>...but there are <strong>many</strong> other natural avenues:</p>
+					<ul>
+						<li>Matching with non-standard data such as text or images</li>
+						<li>Matching with spatio/temporal data</li>
+						<li>AME for difference-in-differences estimation</li>
+						<li>...and more!</li>
+					</ul>
+					<p>Currently we're working on:</p>
+					<ul align="center">
+						<li style="font-weight: bold;">Constructing estimators for matched groups that are asymptotically well-behaved</li>
+						<li>Using matching to facilitate sensitivity analysis in massive observational datasets</li>
+				    </ul>
+				</section> -->
+				<section>
+					<h3> Software </h3>
+					<a href="https://almost-matching-exactly.github.io/">https://almost-matching-exactly.github.io/</a>
+					<iframe style="width:100%; height:600px; vertical-align: middle;" src="https://almost-matching-exactly.github.io/"></iframe>
+				</section>
+
+				<section>
+					<h3> Conclusion </h3>
+					<p class="fragment">Interpretability of causal estimates is important!</p>
+					<ul>
+						<li class="fragment">We propose matching methods that produce interpretable and accurate CATE estimates</li>
+						<li class="fragment">Our methods take advantage of machine learning backends to boost accuracy</li>
+						<li class="fragment">Our methods explain both estimates in terms of cases, and why cases were selected in terms of covariate similarity. </li>
+					</ul>
+				</section>
+				<section>
+					<h1> Thank You! </h1>
+					<h3>Questions?</h3>
+					<ul>
+						<li>Me: <a href="https://marcomorucci.com/">https://marcomorucci.com/</a> | <a mailto="marco.morucci@duke.edu">marco.morucci@duke.edu</a></li>
+						<li>AME Lab: <a href="https://almost-matching-exactly.github.io/">https://almost-matching-exactly.github.io/</a></li>
+						<li>AHB Paper: <a href="https://arxiv.org/abs/2003.01805">https://arxiv.org/abs/2003.01805</a> </li>
+					</li>
+				</section>		
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: 1280,
+  				height: 1024,
+				// Factor of the display size that should remain empty around
+				// the content
+				margin: 0.04,
+				mouseWheel: true,
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 4.0,
+
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					// pass other options into `MathJax.Hub.Config()`
+					TeX: { Macros: { RR: "{\\bf R}" } }
+					},
+
+				pdfSeparateFragments: false,
+
+				autoAnimateUnmatched: false,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>

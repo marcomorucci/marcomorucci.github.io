@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Roboto:400,400i,700" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700|Open+Sans:400,400i,700" rel="stylesheet">
+    <style>
+      :root{    font-family: 'EB Garamond', 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+                font-family: 'Open Sans', 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;}
+      body { font-family: 'Open Sans'; color:black;}
+      h1, h2, h3 {
+        font-family: 'Open Sans';
+        font-weight: normal;
+        color: black;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .title-slide{
+          font-family: 'EB Garamond';
+          background-color: #012169;
+          color: white;
+      } .title-slide h1{
+        font-family: 'EB Garamond';
+          font-size: 60pt;
+          color: white; 
+      } 
+      .title-slide h3{
+        font-family: 'EB Garamond';
+        color: white; 
+      } 
+      .slide-title{
+        color: white;
+        text-align: center;
+      }
+      .slide-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0%;
+        right: 0%;
+        width: 122%;
+        height: 19%;
+        background-color: #012169;
+        font-size: 40pt;
+        color: white;
+        font-family: 'EB Garamond';
+        margin-top: -11%;
+        margin-left:-11%;
+        margin-bottom: 10%;
+        padding-top: 4%;
+      }
+      .footnote{
+          vertical-align: bottom;
+          font-size: small;
+      }
+    </style>
+    <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, title-slide
+
+# Almost Matching Exactly
+### for Interpretable Treatment Effect Estimation
+<hr>
+.left[###Marco Morucci]
+.right[<img src='https://duke.edu/assets/img/dukelogo_white.svg', width='150'>]
+
+---
+class: animated, slideInRight
+
+.slide-header[
+Treatment Effect Estimation]
+
+### **High-stakes** Science, policy, business decisions are supported and justfied with causal estimates more and more every year. 
+
+---
+.slide-header[
+Should I get the COVID-19 Vaccine? ]
+
+### Let's use treatment effect estimates to decide: 
+- Pfizer, about 90% effectiveness estimated (NEJM, 2020)
+- Oxford, about 70% effectiveness estimated (Lancet, 2020)
+
+### ** Conclusion **: Yes, I should get the vaccine, **because** causal estimates support its effectiveness*. 
+
+.footnote[*Disclaimer: this is a stylized toy example that does not reflect how  decisions are or should actually be made]
+
+---
+.slide-header[
+Is this justification enough?]
+
+---
+.slide-header[
+References]
+- Polack, F. P., Thomas, S. J., Kitchin, N., Absalon, J., Gurtman, A., Lockhart, S., ... & Gruber, W. C. (2020). Safety and efficacy of the BNT162b2 mRNA Covid-19 vaccine. New England Journal of Medicine, 383(27), 2603-2615.
+- Voysey, M., Clemens, S. A. C., Madhi, S. A., Weckx, L. Y., Folegatti, P. M., Aley, P. K., ... & Bijker, E. (2021). Safety and efficacy of the ChAdOx1 nCoV-19 vaccine (AZD1222) against SARS-CoV-2: an interim analysis of four randomised controlled trials in Brazil, South Africa, and the UK. The Lancet, 397(10269), 99-111.
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
