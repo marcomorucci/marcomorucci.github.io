@@ -13,4 +13,6 @@ I am a Moore-Sloan faculty fellow at New York University's Center for Data Scien
 
 I received my PhD in political methodology at Duke University, where I worked with [David Siegel](https://sites.duke.edu/daveasiegel/), Cynthia Rudin's [Prediction Analysis Lab](https://users.cs.duke.edu/~cynthia/lab.html), the inter-departmental [Almost Matching Exactly Lab](https://almostmatchingexactly.github.io/), and [Devlab@Duke](https://www.devlabduke.com/). 
 
+I can be reached via email at: marco[dot]morucci[at]nyu[dot]edu.
+
 
