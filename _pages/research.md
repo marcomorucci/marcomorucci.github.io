@@ -22,8 +22,14 @@ My research focuses on developing quantitative methods for empirically hard ques
 * **Shuffling the House? The Profile of Candidates and MPs in the 2015 British General Election.** With Chrisa Lamprinakou, Rosie Campbell, and Jennifer vanHeerde-Hudson.  Parliamentary Affairs (2016) 
 <br><a class="btn" href="https://doi.org/10.1093/pa/gsw030"> Published version</a>
 
+## Work Under Review
+* **Hypothesis Tests that Are Robust to Choice of Matching Method.** With Md. Noor-E-Alam and  Cynthia Rudin (R & R at Informs Journal of Data Science)
+<br><a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a>
+
+* **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. (R & R at American Political Science Review)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
+
 ## Working Papers and Drafts
-* **`dame-flame`: A Python Library Providing Fast Interpretable Matching for Causal Inference.** With Neha R. Gupta, Vittorio Orlandi, Chia-Rui Chang, Tianyu Wang, ,Pritam Dey, Thomas J. Howell, Xian Sun, Angikar Ghosal, Sudeepa Roy, Cynthia Rudin and Alexander Volfovsky. (Under review)
+* **`dame-flame`: A Python Library Providing Fast Interpretable Matching for Causal Inference.** With Neha R. Gupta, Vittorio Orlandi, Chia-Rui Chang, Tianyu Wang, Pritam Dey, Thomas J. Howell, Xian Sun, Angikar Ghosal, Sudeepa Roy, Cynthia Rudin and Alexander Volfovsky. 
 <br><a class="btn" href="https://arxiv.org/abs/2101.01867"> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/DAME-FLAME-Python-Package'> Python Package </a> 
 
 * **A Fast, Cost-Efficient Image Annotation Algorithm withan Application to Analyzing the Visual Components of Protests.** 
@@ -32,10 +38,7 @@ My research focuses on developing quantitative methods for empirically hard ques
 * **Credible Assumption Mixtures: Combining Point and Partial Identification Assumptions for Interpretable Bayesian Causal Inference.** 
 <br><a class='btn' href='/files/cam_paper.pdf'> Draft </a>
 
-* **Hypothesis Tests that Are Robust to Choice of Matching Method.** With Md. Noor-E-Alam and  Cynthia Rudin 
-<br><a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a>
-
-* **Matching Bounds: How Choice of Matching Algorithm Affects Treatment Effect Estimates.** With Cynthia Rudin  (Under review) 
+* **Matching Bounds: How Choice of Matching Algorithm Affects Treatment Effect Estimates.** With Cynthia Rudin 
 <br><a class="btn" href="https://arxiv.org/abs/2009.02776"> Arxiv </a>
 
 * **Political and Economic Determinants of Illicit Financial Flows.** With Pablo Beramendi, David Dow, and Erik Wibbels 
@@ -43,12 +46,10 @@ My research focuses on developing quantitative methods for empirically hard ques
 
 ## Other Projects and Work in Progress
 
-* **Unsupervised and Interpretable Feature Extraction for Political Image Data via Constrained Variational Autoencoders.**
+* **Matched Machine Learning: A Generalized Framework for Treatment Effect Infence with Learned Metrics** With Alexander Volfovsky and Cynthia Rudin
 
-* **Robust Nonparametric Testing for Matching in Observational Causal Inference.** With Noor-E-Alam and Cynthia Rudin
+* **A Double Machine Learning Approach to Combining Experimental and Observational Data** With Vittorio Orlandi, Harsh Parikh, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
+
+* **The Effects of Political Affiliation on Judicial Decisionmaking in Brazil** With Luiz Vilaça and Victoria Paniagua
 
 * **A Bayesian Integrated Theoretical-empirical Model of Conflict in Africa.** With So Jin Lee, Kaitlyn Webster, Margaret J. Foster, Elizabeth C. Carlson, Will H. Moore, and David A. Siegel
-
-* **A Theoretically-driven Approach to Measurement.** With Margaret J. Foster, Kaitlyn Webster, So Jin Lee, David A. Siegel
-
-* **Estimating the Returns to Bribery of Public Officials on Revenue from Public Contracts.** With Victoria Paniagua
