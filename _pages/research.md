@@ -23,7 +23,7 @@ My research focuses on developing quantitative methods for empirically hard ques
 <br><a class="btn" href="https://doi.org/10.1093/pa/gsw030"> Published version</a>
 
 ## Work Under Review
-* **Hypothesis Tests that Are Robust to Choice of Matching Method.** With Md. Noor-E-Alam and  Cynthia Rudin (R & R at Informs Journal of Data Science)
+* **Hypothesis Tests that Are Robust to Choice of Matching Method.** With Md. Noor-E-Alam and  Cynthia Rudin (Conditionally accepted at Informs Journal of Data Science)
 <br><a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a>
 
 * **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. (R & R at American Political Science Review)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
