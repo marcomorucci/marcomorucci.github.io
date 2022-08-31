@@ -7,8 +7,11 @@ author_profile: true
 My research focuses on developing quantitative methods for empirically hard questions in fields of political science in which data is scarce and causal analysis is hard. Examples include the study of civil unrest, institutional change, and democratization. I approach these problems by developing methods to easily collect and analyze new non-standard types of data, such as image, audio and video, and by developing  methods to assess the robustness and sensitivity of causal data analyses in these contexts, where traditional identification is hard. In addition to this, the tools I develop are applicable widely in political science, and are designed with the goal of enabling a large and diverse group of researchers to perform high-quality data analysis, independently of their resources. 
 
 ## Peer-reviewed Publications
+* **A robust approach to quantifying uncertainty in matching problems of causal inference.** With Md. Noor-E-Alam and  Cynthia Rudin. INFORMS Journal on Data Science (Forthcoming)
+<br><a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a> <a class='btn' href="https://github.com/marcomorucci/robust-tests"> Replication </a>
+
 * **FLAME: A Fast Large-scale Almost Matching Exactly Approach to Causal Inference.** With Tianyu Wang, M. Usaid Awan, Yameng Liu, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky. Journal of Machine Learning Research (2022). 
-<br><a class='btn' href='https://arxiv.org/abs/1707.06315'> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/DAME-FLAME-Python-Package'> Python Package </a> <a class='btn' href='https://github.com/vittorioorlandi/FLAME'> R Package </a>
+<br> <a class='btn' href='https://jmlr.org/papers/v22/19-853.html'> Published version </a> <a class='btn' href='https://arxiv.org/abs/1707.06315'> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/DAME-FLAME-Python-Package'> Python Package </a> <a class='btn' href='https://github.com/vittorioorlandi/FLAME'> R Package </a>
 
 * **Adaptive Hyper-box Matching for Interpretable Individualized Treatment Effect Estimation.** With Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky. Proceedings of the 36th Conference on Uncertainty in Artificial Intelligence (UAI 2020) 
 <br><a class='btn' href='http://proceedings.mlr.press/v124/morucci20a/morucci20a.pdf'> Published version </a> <a class='btn' href='https://arxiv.org/abs/2003.01805'> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/Adaptive-Binning'> Replication </a> <a class='btn' href='https://github.com/almost-matching-exactly/AHB-R-package'> R Package </a>
@@ -23,8 +26,6 @@ My research focuses on developing quantitative methods for empirically hard ques
 <br><a class="btn" href="https://doi.org/10.1093/pa/gsw030"> Published version</a>
 
 ## Work Under Review
-* **Hypothesis Tests that Are Robust to Choice of Matching Method.** With Md. Noor-E-Alam and  Cynthia Rudin (Conditionally accepted at Informs Journal of Data Science)
-<br><a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a>
 
 * **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. (R & R at American Political Science Review)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
 
@@ -51,5 +52,7 @@ My research focuses on developing quantitative methods for empirically hard ques
 * **A Double Machine Learning Approach to Combining Experimental and Observational Data** With Vittorio Orlandi, Harsh Parikh, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
 
 * **The Effects of Political Affiliation on Judicial Decisionmaking in Brazil** With Luiz Vilaça and Victoria Paniagua
+
+* **Paying the Dues? Access, Congestion and Bribery.** With Serkant Adiguzel and Diego Romero. 
 
 * **A Bayesian Integrated Theoretical-empirical Model of Conflict in Africa.** With So Jin Lee, Kaitlyn Webster, Margaret J. Foster, Elizabeth C. Carlson, Will H. Moore, and David A. Siegel
