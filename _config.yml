@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Marco Morucci"
 title_separator          : "-"
 name                     : &name "Marco Morucci"
-description              : &description "PhD Student @ Duke University Political Science."
+description              : &description "Faculty Fellow @ New York University Center for Data Science"
 url                      : https://marcomorucci.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "marcomorucci/marcomorucci.github.io"
@@ -79,7 +79,7 @@ analytics:
 # Site Author
 author:
   name             : "Marco Morucci"
-  avatar           : "pic4.jpeg"
+  avatar           : "pic4.png"
   bio              : ""
   location         : "New York, NY"
   employer         :
