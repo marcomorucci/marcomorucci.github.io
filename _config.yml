@@ -79,11 +79,11 @@ analytics:
 # Site Author
 author:
   name             : "Marco Morucci"
-  avatar           : "pic3.jpeg"
+  avatar           : "pic4.jpeg"
   bio              : ""
   location         : "New York, NY"
   employer         :
-  googlescholar    : 
+  googlescholar    :
   email            : "marco[dot]morucci[at]nyu[dot]edu"
   uri              :
   bitbucket        :
@@ -98,7 +98,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : 
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
