@@ -8,7 +8,7 @@ My research focuses on developing quantitative methods for empirically hard ques
 
 ## Peer-reviewed Publications
 * **A robust approach to quantifying uncertainty in matching problems of causal inference.** With Md. Noor-E-Alam and  Cynthia Rudin. INFORMS Journal on Data Science (2022)
-<br><a class="btn" href="https://pubsonline.informs.org/doi/10.1287/ijds.2022.0020" > Published version </a><a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a> <a class='btn' href="https://github.com/marcomorucci/robust-tests"> Replication </a>
+<br><a class="btn" href="https://pubsonline.informs.org/doi/10.1287/ijds.2022.0020" > Published version </a> <a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a> <a class='btn' href="https://github.com/marcomorucci/robust-tests"> Replication </a>
 
 * **FLAME: A Fast Large-scale Almost Matching Exactly Approach to Causal Inference.** With Tianyu Wang, M. Usaid Awan, Yameng Liu, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky. Journal of Machine Learning Research (2022). 
 <br> <a class='btn' href='https://jmlr.org/papers/v22/19-853.html'> Published version </a> <a class='btn' href='https://arxiv.org/abs/1707.06315'> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/DAME-FLAME-Python-Package'> Python Package </a> <a class='btn' href='https://github.com/vittorioorlandi/FLAME'> R Package </a>
