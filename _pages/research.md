@@ -30,6 +30,9 @@ My research focuses on developing quantitative methods for empirically hard ques
 * **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. (R & R at American Political Science Review)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
 
 ## Working Papers and Drafts
+* **Anti Political Class Bias in Corruption Sentencing** With Luiz Vilaça and Victoria Paniagua.
+<br><a class="btn" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4332033"> SSRN </a> 
+
 * **`dame-flame`: A Python Library Providing Fast Interpretable Matching for Causal Inference.** With Neha R. Gupta, Vittorio Orlandi, Chia-Rui Chang, Tianyu Wang, Pritam Dey, Thomas J. Howell, Xian Sun, Angikar Ghosal, Sudeepa Roy, Cynthia Rudin and Alexander Volfovsky. 
 <br><a class="btn" href="https://arxiv.org/abs/2101.01867"> Arxiv </a> <a class='btn' href='https://github.com/almost-matching-exactly/DAME-FLAME-Python-Package'> Python Package </a> 
 
@@ -50,8 +53,6 @@ My research focuses on developing quantitative methods for empirically hard ques
 * **Matched Machine Learning: A Generalized Framework for Treatment Effect Infence with Learned Metrics** With Alexander Volfovsky and Cynthia Rudin
 
 * **A Double Machine Learning Approach to Combining Experimental and Observational Data** With Vittorio Orlandi, Harsh Parikh, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
-
-* **The Effects of Political Affiliation on Judicial Decisionmaking in Brazil** With Luiz Vilaça and Victoria Paniagua
 
 * **Paying the Dues? Access, Congestion and Bribery.** With Serkant Adiguzel and Diego Romero. 
 
