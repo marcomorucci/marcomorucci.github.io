@@ -7,6 +7,8 @@ author_profile: true
 
 ## At NYU
 
+### DS-UA 111: Data Science for Everyone (Spring 2023)
+
 ### DS-UA 201: Causal Inference (Fall 2021)
 
 [Syllabus](/files/ds201-causal-inference-syllabus-fall2021.pdf) 
