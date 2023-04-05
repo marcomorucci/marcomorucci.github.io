@@ -13,7 +13,7 @@ After completing my PhD I have made a substantial committment to collaborating w
 - [Ani Yang](https://www.linkedin.com/in/haoyu-yang-617372234/) (Senior, Computer and Data Science, NYU)
 - Ming Cao (Senior, Computer and Data Science, NYU)
 - [Yukai (Tom) Yang](https://www.linkedin.com/in/yukai-yang-7bba651a3/) (Senior, Data Science and Mathematics, NYU)
-- Tracy Zhu (Senior, Data Science and Mathematics, NYU)
+- [Tracy Zhu](https://github.com/Tracyyy-Zhu) (Senior, Data Science and Mathematics, NYU)
 - Payton Guo (Senior, Computer Science Data Science, NYU)
 - Jingjing (Lily) Zheng (Senior, Media/Data Science/Business, NYU) 
 - [Luiz Doria Vilaça](https://luizvilaca.weebly.com/) (PhD candidate, Sociology, Notre Dame University)
