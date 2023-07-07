@@ -37,6 +37,9 @@ My research focuses on developing quantitative methods for empirically hard ques
 * **A Double Machine Learning Approach to Combining Experimental and Observational Data** With Vittorio Orlandi, Harsh Parikh, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky.
 <br><a class="btn" href="http://arxiv.org/abs/2307.01449"> Arxiv </a> 
 
+* **Multi-Task Learning Improves Performance In Deep Argument Mining Models** With Amirhossein Farzam, Shashank Shekhar, and Isaac Mehlhaff
+<br><a class="btn" href="https://arxiv.org/abs/2307.01401"> Arxiv </a> 
+
 * **Matched Machine Learning: A Generalized Framework for Treatment Effect Inference With Learned Metrics** With Cynthia Rudin and Alexander Volfovsky.
 <br><a class="btn" href="https://arxiv.org/pdf/2304.01316.pdf"> Arxiv </a> 
 
