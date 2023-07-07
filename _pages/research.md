@@ -33,6 +33,10 @@ My research focuses on developing quantitative methods for empirically hard ques
 <br><a class="btn" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4332033"> SSRN </a> 
 
 ## Working Papers and Drafts
+
+* **A Double Machine Learning Approach to Combining Experimental and Observational Data** With Vittorio Orlandi, Harsh Parikh, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky.
+<br><a class="btn" href="http://arxiv.org/abs/2307.01449"> Arxiv </a> 
+
 * **Matched Machine Learning: A Generalized Framework for Treatment Effect Inference With Learned Metrics** With Cynthia Rudin and Alexander Volfovsky.
 <br><a class="btn" href="https://arxiv.org/pdf/2304.01316.pdf"> Arxiv </a> 
 
@@ -52,8 +56,6 @@ My research focuses on developing quantitative methods for empirically hard ques
 (Draft available upon request)
 
 ## Other Projects and Work in Progress
-
-* **A Double Machine Learning Approach to Combining Experimental and Observational Data** With Vittorio Orlandi, Harsh Parikh, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky
 
 * **Paying the Dues? Access, Congestion and Bribery.** With Serkant Adiguzel and Diego Romero. 
 
