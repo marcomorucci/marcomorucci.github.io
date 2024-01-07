@@ -27,9 +27,12 @@ My research focuses on developing quantitative methods for empirically hard ques
 
 ## Work Under Review
 
-* **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. (R & R at American Political Science Review)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
+* **Matching Bounds: How Choice of Matching Algorithm Affects Treatment Effect Estimates.** With Cynthia Rudin (R & R at Journal of Politics)
+<br><a class="btn" href="https://arxiv.org/abs/2009.02776"> Arxiv </a>
 
-* **Anti Political Class Bias in Corruption Sentencing** With Luiz Vilaça and Victoria Paniagua.  (R & R at American Journal of Political Science)
+* **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. (Conditionally accepted at American Political Science Review)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
+
+* **Anti Political Class Bias in Corruption Sentencing** With Luiz Vilaça and Victoria Paniagua.  (Conditionally accepted at American Journal of Political Science)
 <br><a class="btn" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4332033"> SSRN </a> 
 
 ## Working Papers and Drafts
@@ -51,9 +54,6 @@ My research focuses on developing quantitative methods for empirically hard ques
 
 * **Credible Assumption Mixtures: Combining Point and Partial Identification Assumptions for Interpretable Bayesian Causal Inference.** 
 <br><a class='btn' href='/files/cam_paper.pdf'> Draft </a>
-
-* **Matching Bounds: How Choice of Matching Algorithm Affects Treatment Effect Estimates.** With Cynthia Rudin 
-<br><a class="btn" href="https://arxiv.org/abs/2009.02776"> Arxiv </a>
 
 * **Political and Economic Determinants of Illicit Financial Flows.** With Pablo Beramendi, David Dow, and Erik Wibbels 
 (Draft available upon request)
