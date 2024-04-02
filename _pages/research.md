@@ -7,6 +7,8 @@ author_profile: true
 My research focuses on developing quantitative methods for empirically hard questions in fields of political science in which data is scarce and causal analysis is hard. Examples include the study of civil unrest, institutional change, and democratization. I approach these problems by developing methods to easily collect and analyze new non-standard types of data, such as image, audio and video, and by developing  methods to assess the robustness and sensitivity of causal data analyses in these contexts, where traditional identification is hard. In addition to this, the tools I develop are applicable widely in political science, and are designed with the goal of enabling a large and diverse group of researchers to perform high-quality data analysis, independently of their resources. 
 
 ## Peer-reviewed Publications
+* **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. American Political Science Review (Forthcoming)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
+
 * **A robust approach to quantifying uncertainty in matching problems of causal inference.** With Md. Noor-E-Alam and  Cynthia Rudin. INFORMS Journal on Data Science (2022)
 <br><a class="btn" href="https://pubsonline.informs.org/doi/10.1287/ijds.2022.0020" > Published version </a> <a class="btn" href="https://arxiv.org/abs/1812.02227"> Arxiv </a> <a class='btn' href="https://github.com/marcomorucci/robust-tests"> Replication </a>
 
@@ -29,8 +31,6 @@ My research focuses on developing quantitative methods for empirically hard ques
 
 * **Matching Bounds: How Choice of Matching Algorithm Affects Treatment Effect Estimates.** With Cynthia Rudin (R & R at Journal of Politics)
 <br><a class="btn" href="https://arxiv.org/abs/2009.02776"> Arxiv </a>
-
-* **Measurement That Matches Theory: Theory-Driven Identificationin IRT Models.** With Margaret Foster, Kaitlyn Webster, So Jin Lee, and David Siegel. (Conditionally accepted at American Political Science Review)  <br><a class="btn" href="https://arxiv.org/abs/2111.11979"> Arxiv </a>
 
 * **Anti Political Class Bias in Corruption Sentencing** With Luiz Vilaça and Victoria Paniagua.  (Conditionally accepted at American Journal of Political Science)
 <br><a class="btn" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4332033"> SSRN </a> 
