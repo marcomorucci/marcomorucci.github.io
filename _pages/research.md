@@ -43,6 +43,8 @@ My research focuses on developing quantitative methods for empirically hard ques
 
 ## Working Papers and Drafts
 
+* **Model Complexity for Supervised Learning: Why Simple Models Almost Always Work Best, And Why It Matters for Applied Research**. With Arthur Spirling.  <a class="btn" href="https://arthurspirling.org/documents/MorucciSpirling_JustDoOLS.pdf"> Draft </a> 
+
 * **A Double Machine Learning Approach to Combining Experimental and Observational Data** With Vittorio Orlandi, Harsh Parikh, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky.
 <a class="btn" href="http://arxiv.org/abs/2307.01449"> Arxiv </a> 
 
