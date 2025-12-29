@@ -12,3 +12,9 @@ author_profile: true
 
 ### AHB: an R pacakge for matching with continuous covariates. 
 <a class='btn' href='https://github.com/almost-matching-exactly/AHB-R-package'> R Package </a>
+
+### MatchingBounds: Finite-sample sensitivity analysis for Matching
+<a class='btn' href="https://github.com/marcomorucci/MatchingBounds"> R Package </a>
+
+### IRT-M: Ideal Point estimation with theoretically-driven constraints
+<a class="btn" href="https://github.com/dasiegel/IRT-M"> R package </a>
