@@ -5,6 +5,14 @@ permalink: teaching/
 author_profile: true
 ---
 
+## At MSU
+
+## PLS 802: Causal inference (Spring 2026)
+
+## PLS 900: Introduction to Machine Learning for Social Scientists (Fall 2025)
+
+## PLS 202: Introduction to data analytics for the social sciences (Spring/Fall most years)
+
 ## At NYU
 
 ### DS-GA 1015: Text as Data (Spring 2024)
